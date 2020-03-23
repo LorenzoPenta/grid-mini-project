@@ -71,3 +71,37 @@ Global classes
   background: var(--primaryclr);
   color: var(--mainwhite);
 }
+/* 
+============
+Main navbar
+============
+*/
+.main-navbar {
+  background: var(--darkgrey);
+  padding: 0 2rem;
+}
+.main-navbar li {
+  list-style-type: none;
+}
+.main-navbar a {
+  text-transform: capitalize;
+  display: block;
+  color: var(--primaryclr);
+  padding: 1rem;
+  transition: var(--maintransition);
+  letter-spacing: var(--mainspacing);
+}
+.main-navbar a:hover{
+  color: var(--mainblack);
+}
+@media screen and (min-width: 992px) {
+  .main-navbar ul{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-navbar a{
+    text-align: center;
+  }
+}
