@@ -1,5 +1,73 @@
+/* 
+============
+Variables
+============
+*/
+:root {
+  --primaryclr: #f15025;
+  --mainblack: #222;
+  --mainwhite: #fff;
+  --offwhite: #f7f7f7;
+  --darkgrey: #afafaf;
+  --maintransition: all 0.3s linear;
+  --mainspacing: 0.2rem;
+}
+/* 
+============
+Global styles
+============
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Fira Code", monospace;
+  color: var(--mainblack);
+  background: var(--mainwhite);
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h1,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainspacing);
+  margin-bottom: 1.25rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+}
+/* 
+============
+Global classes
+============
+*/
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--primaryclr);
+  color: var(--primaryclr);
+  margin: 3rem;
+  transition: var(--maintransition);
+}
+.btn:hover {
+  background: var(--primaryclr);
+  color: var(--mainwhite);
 }
